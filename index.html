@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" name="mainF" class="mainF">
+        <div class="calk__head-container">
+            <h1 class="calk__title">Калькулятор стоимости авто</h1>
+        </div>
+        <ul class="wrapper">
+            <li class="form-row brandSelec">
+                <label for="brandSelect" class="brand"> выбрать марку</label>
+                <select class="select" name="brandSelect" id="brandSelect">
+                    <!-- <option value="">выберите марку авто</option> -->
+                    <option value="1">Reno</option>
+                    <option value="2">Mazda</option>
+                    <option value="3">Opel</option>
+                </select>
+            </li>
+            <li class="form-row modelSelect">
+                <label for="modelSelect " class="model"> выбрать модель</label>
+                <select class="select" name="modelSelect" id="modelSelect">
+                    <!-- <option value="">выберите марку авто</option> -->
+                    <option value="1">Reno Duste</option>
+                    <option value="2">Reno Kangoo</option>
+                    <option value="3">Reno Espace</option>
+                    <option value="4">Reno Arkana</option>
+                    <option value="5">Reno Fluence</option>
+                    <option value="6">Mazda CX-9</option>
+                    <option value="7">Mazda CX-5</option>
+                    <option value="8">Mazda CX-4</option>
+                    <option value="9">Mazda 6</option>
+                    <option value="10">Opel Crossland</option>
+                    <option value="11">Opel Combo Cargo</option>
+                    <option value="12">Opel Zafira Life</option>
+                    <option value="13">Opel Combo Life</option>
+                    <option value="14">Opel Grandland</option>
+                    <option value="15">Opel Vivaro</option>
+                    <option value="16"></option>
+                </select>
+            </li>
+
+            <li class="form-row fuelselect">
+                <label>тип топлива</label>
+                <input type="checkbox" id="petrol" class="checkbox" name="fuel" value="бензин" checked>
+                <label for="petrol">бензин</label>
+                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="газ">
+                <label for="gas">газ</label>
+                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="дизель">
+                <label for="diesel">дизель</label>
+                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="электричество">
+                <label for="electricity">электричество</label>
+            </li>
+
+            <li class="form-row volume">
+                <label>объем двигателя</label>
+                <input type="radio" id="volume1" name="volume" checked>
+                <label for="volume1" value="1,1 - 1,8">1,1л - 1,8л</label>
+                <input type="radio" id="volume2" name="volume">
+                <label for="volume2" value="1,9 - 3,5">1,9л - 3,5л</label>
+            </li>
+
+            <li class="form-row condition">
+                <label>состояние</label>
+                <input type="radio" id="new" name="condition" checked>
+                <label for="new" value="condition1">новая</label>
+                <input type="radio" id="old" name="condition">
+                <label for="old" value="condition2">б/у</label>
+            </li>
+
+            <li class="form-row">
+                <input type="radio" id="owners1" name="owners" checked class="owners">
+                <label for="owners1" value="owners1" class="owners">1-2 владельца</label>
+                <input type="radio" id="owners2" name="owners" class="owners">
+                <label for="owners2" value="owners2" class="owners">3 и более</label>
+            </li>
+
+            <li class="form-row">
+                <label for="typepay1"></label>
+
+                <input type="radio" id="typepay1" name="typepay" checked class="typepay">
+                <label for="typepay1" value="cardpay">оплата картой</label>
+
+                <input type="radio" id="typepay2" name="typepay" class="typepay">
+                <label for="typepay2" value="cashpay">оплата наличными</label>
+
+                <input type="radio" id="typepay3" name="typepay" class="typepay">
+                <label for="typepay3" value="billpay">оплата по счету</label>
+            </li>
+
+        </ul>
+    </form>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+body{
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.mainF{
+    width: 400px;
+    height: 500px;
+}
+
+.wrapper{
+    background-color: whitesmoke;
+    padding: 0;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.calk__title{
+    text-align: center;
+}
+
+.form-row{
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+
+.select{
+    /* flex: 1; */
+    margin-left: 10px;
+  }
+  
+.enginecapacity{
+border: 1px solid #000;
+}
+
+.owners{
+    display: none;
+}
+/* .mainF{
+    border: 1px dashed #850000;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+}
+
+.calk__head{
+    background-color: aquamarine;
+    color: white;
+}
+.calc__title{
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    font-size: 14px;
+} */
