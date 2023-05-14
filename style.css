@@ -5,15 +5,22 @@ body{
 }
 
 .mainF{
+    border: 1px solid #000;
+    border-radius: 12px;
     width: 400px;
-    height: 500px;
+    height: 430px;
+    margin: 30px auto;
+    display: flex;display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .wrapper{
     background-color: whitesmoke;
-    padding: 0;
+    border: 1px solid #000;
+    padding: 5px;
     border-radius: 10px;
-    padding: 20px;
 }
 
 .calk__title{
@@ -21,9 +28,10 @@ body{
 }
 
 .form-row{
+    align-items: center;
     display: flex;
-    justify-content: flex-end;
-    padding: .5em;
+    justify-content: flex-start;
+    padding: .7em;
 }
 
 .select{
@@ -31,12 +39,17 @@ body{
     margin-left: 10px;
   }
   
-.enginecapacity{
-border: 1px solid #000;
-}
-
 .owners{
     display: none;
+}
+
+.carprice{
+   border: 1px solid rgb(68, 68, 68);
+   /* background-color: rgb(241, 134, 46); */
+   border-radius: 12px;
+   width: 120px;
+   height: 30px;
+justify-content: center;
 }
 /* .mainF{
     border: 1px dashed #850000;

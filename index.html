@@ -49,7 +49,7 @@
 
             <li class="form-row fuelselect">
                 <label>тип топлива</label>
-                <input type="checkbox" id="petrol" class="checkbox" name="fuel" value="бензин" checked>
+                <input type="checkbox" id="petrol" class="checkbox select" name="fuel" value="бензин" checked>
                 <label for="petrol">бензин</label>
                 <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="газ">
                 <label for="gas">газ</label>
@@ -60,42 +60,56 @@
             </li>
 
             <li class="form-row volume">
-                <label>объем двигателя</label>
-                <input type="radio" id="volume1" name="volume" checked>
-                <label for="volume1" value="1,1 - 1,8">1,1л - 1,8л</label>
-                <input type="radio" id="volume2" name="volume">
-                <label for="volume2" value="1,9 - 3,5">1,9л - 3,5л</label>
+                <label for="volume" value="1,1 - 3,5">объем двигателя</label>
+                <input type="number" id="volume" name="volume" class="select">
             </li>
 
             <li class="form-row condition">
                 <label>состояние</label>
-                <input type="radio" id="new" name="condition" checked>
+                <input type="radio" id="new" name="condition" class="select" checked>
                 <label for="new" value="condition1">новая</label>
-                <input type="radio" id="old" name="condition">
+                <input type="radio" id="old" name="condition" class="select">
                 <label for="old" value="condition2">б/у</label>
             </li>
 
-            <li class="form-row">
+            <li class="form-row own">
                 <input type="radio" id="owners1" name="owners" checked class="owners">
                 <label for="owners1" value="owners1" class="owners">1-2 владельца</label>
                 <input type="radio" id="owners2" name="owners" class="owners">
                 <label for="owners2" value="owners2" class="owners">3 и более</label>
             </li>
 
-            <li class="form-row">
-                <label for="typepay1"></label>
+            <li class="form-row color">
+                <input type="radio" id="withe" name="color" checked class="colors">
+                <label for="withe" value="withe" class="color">белый</label>
 
+                <input type="radio" id="black" name="color" class="colors">
+                <label for="black" value="black" class="color">черный</label>
+
+                <input type="radio" id="red" name="color" class="colors">
+                <label for="red" value="red" class="color">красный</label>
+
+                <input type="radio" id="gray" name="color" class="colors">
+                <label for="gray" value="gray" class="color">серый</label>
+
+                <input type="radio" id="blue" name="color" class="colors">
+                <label for="blue" value="blue" class="color">синий</label>
+
+                <input type="radio" id="ultra" name="color" class="colors">
+                <label for="ultra" value="ultra" class="color">ультра</label>
+            </li>
+
+            <li class="form-row pay">
+                <label for="typepay1"></label>
                 <input type="radio" id="typepay1" name="typepay" checked class="typepay">
                 <label for="typepay1" value="cardpay">оплата картой</label>
-
                 <input type="radio" id="typepay2" name="typepay" class="typepay">
                 <label for="typepay2" value="cashpay">оплата наличными</label>
-
                 <input type="radio" id="typepay3" name="typepay" class="typepay">
                 <label for="typepay3" value="billpay">оплата по счету</label>
             </li>
-
         </ul>
+        <button class="carprice">расчитать цену</button>
     </form>
 
     <script src="/index.js"></script>
