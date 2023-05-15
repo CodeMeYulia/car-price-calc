@@ -15,35 +15,19 @@
             <h1 class="calk__title">Калькулятор стоимости авто</h1>
         </div>
         <ul class="wrapper">
-            <li class="form-row brandSelec">
+            <li class="form-row brandSelect">
                 <label for="brandSelect" class="brand"> выбрать марку</label>
-                <select class="select" name="brandSelect" id="brandSelect">
-                    <!-- <option value="">выберите марку авто</option> -->
-                    <option value="1">Reno</option>
-                    <option value="2">Mazda</option>
-                    <option value="3">Opel</option>
+                <select class="select" name="brandSelect" id="brandSelect" onchange="selectBrand(this)">
+                    <option>--выберите марку авто--</option>
+                    <option>Renault</option>
+                    <option>Mazda</option>
+                    <option>Opel</option>
                 </select>
             </li>
             <li class="form-row modelSelect">
                 <label for="modelSelect " class="model"> выбрать модель</label>
                 <select class="select" name="modelSelect" id="modelSelect">
-                    <!-- <option value="">выберите марку авто</option> -->
-                    <option value="1">Reno Duste</option>
-                    <option value="2">Reno Kangoo</option>
-                    <option value="3">Reno Espace</option>
-                    <option value="4">Reno Arkana</option>
-                    <option value="5">Reno Fluence</option>
-                    <option value="6">Mazda CX-9</option>
-                    <option value="7">Mazda CX-5</option>
-                    <option value="8">Mazda CX-4</option>
-                    <option value="9">Mazda 6</option>
-                    <option value="10">Opel Crossland</option>
-                    <option value="11">Opel Combo Cargo</option>
-                    <option value="12">Opel Zafira Life</option>
-                    <option value="13">Opel Combo Life</option>
-                    <option value="14">Opel Grandland</option>
-                    <option value="15">Opel Vivaro</option>
-                    <option value="16"></option>
+                    <option value="0">выберите модель авто</option>
                 </select>
             </li>
 
@@ -60,7 +44,7 @@
             </li>
 
             <li class="form-row volume">
-                <label for="volume" value="1,1 - 3,5">объем двигателя</label>
+                <label for="volume" value="1,1 - 3,5">объем двигателя, л</label>
                 <input type="number" id="volume" name="volume" class="select">
             </li>
 
@@ -81,24 +65,20 @@
 
             <li class="form-row color">
                 <input type="radio" id="withe" name="color" checked class="colors">
-                <label for="withe" value="withe" class="color">белый</label>
-
+                <label for="withe" value="withe" class="color">белая</label>
                 <input type="radio" id="black" name="color" class="colors">
-                <label for="black" value="black" class="color">черный</label>
-
+                <label for="black" value="black" class="color">черная</label>
                 <input type="radio" id="red" name="color" class="colors">
-                <label for="red" value="red" class="color">красный</label>
-
+                <label for="red" value="red" class="color">красная</label>
                 <input type="radio" id="gray" name="color" class="colors">
-                <label for="gray" value="gray" class="color">серый</label>
-
+                <label for="gray" value="gray" class="color">серая</label>
                 <input type="radio" id="blue" name="color" class="colors">
-                <label for="blue" value="blue" class="color">синий</label>
-
+                <label for="blue" value="blue" class="color">синяя</label>
                 <input type="radio" id="ultra" name="color" class="colors">
                 <label for="ultra" value="ultra" class="color">ультра</label>
             </li>
-
+            <br>
+            <hr>
             <li class="form-row pay">
                 <label for="typepay1"></label>
                 <input type="radio" id="typepay1" name="typepay" checked class="typepay">
@@ -111,7 +91,9 @@
         </ul>
         <button class="carprice">расчитать цену</button>
     </form>
+    <div class="summary">
 
+    </div>
     <script src="/index.js"></script>
 </body>
 
