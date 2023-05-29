@@ -1,8 +1,7 @@
-const formF = document.forms.mainF;
-const brands = mainF.brandSelect;
-const carprice = document.querySelector('.carprice');
+//переменная для вывода стоимости
 const price = document.querySelector('.summary');
 
+//функция определения моделей в зависимости от бренда с базовой стоимостью моделей
 function selectBrand() {
 
     modelSelect.innerHTML = '<option value="0">--выберите модель авто--</option>';
@@ -17,26 +16,35 @@ function selectBrand() {
         models = ['Crossland', 'Combo Cargo', 'Zafira Life', 'Combo Life', 'Grandland','Vivaro'];
         values = [650800, 155000, 630000, 410000, 355000, 880000];
     }else{return null}
-    
+
+    //подсказка выбрать модель
     price.innerHTML = `hoba!выбран бренд ${brandSelect.value} <p> выберите модель</p>`;
+    
+    //обход массива с записью названия и цены модели и добавление в опцию выбора
     for (let i = 0; i <= models.length; i++){
         const option = document.createElement("option");
         option.text = models[i];
         option.value = values[i];
         modelSelect.add(option);
-        console.log(modelSelect[i]);
+        // console.log(modelSelect[i]);
     }
     
 }
-selectBrand();
+selectBrand(); 
 
-// function selectModel() {
-    
-// }
+//выводим и скрываем поле владельцев исходя из выбора опции состояния
+const old = document.getElementById("old");
+const new1 = document.getElementById("new1");
 
-carprice.addEventListener ('click', function(evt) {
-    // console.log('');
-    
+old.addEventListener ('click', function(evt) {
+    if (evt.target.checked) {
+        document.querySelector('.own').style.display = 'block';
+    } 
+})
+new1.addEventListener ('click', function(evt) {
+    if (evt.target.checked) {
+        document.querySelector('.own').style.display = 'none';
+    } 
 })
 
 // console.log(modelSelect.innerHTML);
