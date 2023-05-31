@@ -32,51 +32,51 @@
             </li>
 
             <li class="form-row fuelselect">
-                <label>тип топлива</label>
-                <input type="checkbox" id="petrol" class="checkbox select" name="fuel" value="бензин" checked>
+                <span>тип топлива</span>
+                <input type="radio" id="petrol" name="fuel" class="fuel" value="1000" checked>
                 <label for="petrol">бензин</label>
-                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="газ">
+                <input type="radio" id="gas" name="fuel" class="fuel" value="1200">
                 <label for="gas">газ</label>
-                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="дизель">
+                <input type="radio" id="diesel" name="fuel" class="fuel" value="1800">
                 <label for="diesel">дизель</label>
-                <input type="checkbox" id="checkbox" class="checkbox" name="fuel" value="электричество">
+                <input type="radio" id="electricity" name="fuel" class="fuel" value="5000">
                 <label for="electricity">электричество</label>
             </li>
 
-            <li class="form-row volume">
-                <label for="volume" value="1,1 - 3,5">объем двигателя, л</label>
-                <input type="number" id="volume" name="volume" class="select" placeholder="1,1" min="1.1" max="3.5"
-                    step="0.4">
+            <li class="form-row">
+                <label for="volume" value="">объем двигателя, л</label>
+                <input type="number" id="volume" name="volume" class="select volume" placeholder="1,1" min="1.1"
+                    max="3.5" step="0.4">
             </li>
 
             <li class="form-row condition">
                 <label>состояние</label>
-                <input type="radio" id="new1" name="condition" class="select" checked value="condition1">
+                <input type="radio" id="new1" name="condition" class="select" checked value="0">
                 <label for="new">новая</label>
-                <input type="radio" id="old" name="condition" class="select" value="condition2">
+                <input type="radio" id="old" name="condition" class="select">
                 <label for="old">б/у</label>
             </li>
 
             <li class="form-row own">
-                <input type="radio" id="owners1" name="owners" checked class="owners">
-                <label for="owners1" value="owners1" class="owners">1-2 владельца</label>
-                <input type="radio" id="owners2" name="owners" class="owners">
-                <label for="owners2" value="owners2" class="owners">3 и более</label>
+                <input type="radio" id="owners1" name="owners" class="owners" value="-100000" checked>
+                <label for="owners1" class="owners">1-2 владельца</label>
+                <input type="radio" id="owners2" name="owners" class="owners" value="-300000">
+                <label for="owners2" class="owners">3 и более</label>
             </li>
 
             <li class="form-row color">
-                <input type="radio" id="withe" name="color" checked class="colors">
-                <label for="withe" value="withe" class="color">белая</label>
-                <input type="radio" id="black" name="color" class="colors">
-                <label for="black" value="black" class="color">черная</label>
-                <input type="radio" id="red" name="color" class="colors">
-                <label for="red" value="red" class="color">красная</label>
-                <input type="radio" id="gray" name="color" class="colors">
-                <label for="gray" value="gray" class="color">серая</label>
-                <input type="radio" id="blue" name="color" class="colors">
-                <label for="blue" value="blue" class="color">синяя</label>
-                <input type="radio" id="ultra" name="color" class="colors">
-                <label for="ultra" value="ultra" class="color">ультра</label>
+                <input type="radio" id="withe" name="color" checked class="colors" value="1000">
+                <label for="withe" class="color">белая</label>
+                <input type="radio" id="black" name="color" class="colors" value="1000">
+                <label for="black" class="color">черная</label>
+                <input type="radio" id="red" name="color" class="colors" value="5000">
+                <label for="red" ass="color">красная</label>
+                <input type="radio" id="gray" name="color" class="colors" value="1000">
+                <label for="gray" lass="color">серая</label>
+                <input type="radio" id="blue" name="color" class="colors" value="1000">
+                <label for="blue" lass="color">синяя</label>
+                <input type="radio" id="ultra" name="color" class="colors" value="15000">
+                <label for="ultra" class="color">ультра</label>
             </li>
             <br>
             <hr>
@@ -90,11 +90,13 @@
                 <label for="typepay3" value="billpay">оплата по счету</label>
             </li>
         </ul>
-        <button class="carprice">расчитать цену</button>
+        <button type="button" class="carprice">расчитать цену</button>
     </form>
     <div class="summary">
 
     </div>
+
+
     <script src="/index.js"></script>
 </body>
 
