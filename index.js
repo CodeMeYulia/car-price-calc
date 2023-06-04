@@ -37,9 +37,17 @@ const base = () =>{
         if (e.target.selected = true) {
             let basePrice = this.value;
             console.log(basePrice);
+            if(basePrice !== 0) {carprice.removeAttribute('disabled')};
+            if(basePrice == 0){carprice.setAttribute('disabled', 'disabled')};
             return basePrice;
         }
     })
+}
+
+
+
+function checkModel () {
+    console.log('mao!')
 }
 
 base();
@@ -74,9 +82,7 @@ function fuelAdd(e) {
 
 //получаем стоимость поля объем
 const volume = document.querySelector ('.volume');
-console.log(volume);
 volume.addEventListener ('input', volAdd);
-
 
 function volAdd(e) {
     const volPrice = this.value*300;
@@ -88,9 +94,8 @@ function volAdd(e) {
 //переменная для вывода стоимости
 const price = document.querySelector('.summary');
 
-
 function summary (basePrice, fuelPrice, volPrice, condAdd, ownAdd, colorAdd, payAdd) {
-    const summ = `${basePrice} + ${fuelPrice}`;
+    const summ = `${basePrice} + ${fuelPrice} + ${volPrice}`;
     console.log(basePrice);
     console.log(fuelPrice);
     console.log(summ);
